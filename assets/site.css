@@ -67,3 +67,61 @@
   color: #eee4d8;
 }
 
+/* Final layout and accessibility refinements */
+
+/* More compact homepage hero */
+.hero {
+  padding: 58px 0 48px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.12;
+  margin-bottom: 16px;
+}
+
+.hero .lede {
+  font-size: clamp(1.02rem, 1.5vw, 1.17rem);
+  line-height: 1.56;
+}
+
+.hero .actions {
+  margin-top: 22px;
+}
+
+/* Larger navigation touch targets */
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+/* Consistent warm palette */
+.breadcrumb span {
+  color: var(--muted);
+}
+
+.feature-media img {
+  border-color: var(--line);
+}
+
+/* Mobile improvements */
+@media (max-width: 600px) {
+  .hero {
+    padding: 42px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.05rem, 7vw, 2.5rem);
+  }
+
+  .nav-links {
+    gap: 4px 16px;
+  }
+
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
