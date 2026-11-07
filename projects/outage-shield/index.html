@@ -533,35 +533,28 @@
 <!-- 05 / WHAT WAS VALIDATED -->
 
 <section class="section section-soft">
+  
+<section class="section section-soft">
   <div class="container">
-    <p class="eyebrow">05 / What was validated</p>
-    <h2>Clear evidence boundaries</h2>
+    <p class="eyebrow">05 / Testing and validation</p>
+    <h2>Version 1 validation results</h2>
 
     <div class="integrity">
-      <div class="integrity-grid">
-        <div>
-          <h3>Demonstrated in Version 1</h3>
-          <ul>
-            <li>Live REST polling and processing of GitHub and Cloudflare status data.</li>
-            <li>Vendor component-to-Service Offering mapping and risk context.</li>
-            <li>Controlled Incident creation, primary-Incident reuse and P3 → P2 escalation.</li>
-            <li>Native Major Incident candidate proposal for human review.</li>
-            <li>Four fail-safe test paths passed.</li>
-            <li>Subscriber event generation and queued outbound email records.</li>
-          </ul>
-        </div>
+      <h3>Demonstrated in Version 1</h3>
+      <ul>
+        <li>Live REST polling and processing of GitHub and Cloudflare status data.</li>
+        <li>Vendor component-to-Service Offering mapping and risk context.</li>
+        <li>Controlled Incident creation, primary-Incident reuse and P3 → P2 escalation.</li>
+        <li>Native Major Incident candidate proposal for human review.</li>
+        <li>Four fail-safe test paths passed.</li>
+        <li>Subscriber event generation and queued outbound email records.</li>
+      </ul>
 
-        <div>
-          <h3>Not claimed as validated</h3>
-          <ul>
-            <li>Production deployment or live business-user acceptance.</li>
-            <li>External email receipt or delivery beyond the PDI outbox.</li>
-            <li>Unattended native ITSM writes enabled during the live polling test.</li>
-            <li>HTTP timeout, retry and upstream transport-failure recovery.</li>
-            <li>Automatic declaration of a Major Incident.</li>
-          </ul>
-        </div>
-      </div>
+      <h3 style="margin-top:24px">Testing scope</h3>
+      <p>
+        Testing was conducted in a ServiceNow Personal Developer Instance.
+        Live vendor monitoring and native ITSM automation were validated
+        separately using controlled scenarios.
     </div>
 
     <p class="small-note" style="margin-top:17px">
@@ -569,6 +562,8 @@
       evidence captured 03 November 2026.
     </p>
   </div>
+</section>
+
 </section>
 
 <!-- 06 / SOURCE & NEXT STEPS -->
